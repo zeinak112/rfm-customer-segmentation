@@ -192,6 +192,12 @@ Run the basic cleaning, then the SQL pipeline, then the charts:Bashpython python
 python python/run_pipeline.py
 python python/make_charts.py
 Open tableau/Online_Retail_RFM_Dashboard_updated.twbx in Tableau Public.run_pipeline.py builds a local SQLite database, runs the files in sql/ in order, and writes every table used in Tableau to data/processed/.📁 Repository StructurePlaintextrfm-customer-segmentation/
+
+---
+
+## 📁 Repository Structure
+
+```text
 │
 ├── data/
 │   ├── raw/                        # Online Retail.xlsx (not included)
@@ -214,11 +220,37 @@ Open tableau/Online_Retail_RFM_Dashboard_updated.twbx in Tableau Public.run_pipe
 ├── requirements.txt
 ├── .gitignore
 └── README.md
-🛠️ Tools
-Tool	Purpose
-SQL (SQLite)	CTEs, window functions (PERCENT_RANK, LAG, ROW_NUMBER, running totals), segmentation, Pareto, cohorts
-Python (pandas, matplotlib)	Cleaning, pipeline orchestration, charts
-Tableau Public	Interactive dashboard
-GitHub	Documentation and portfolio
-👩‍💻 Author
-Zeinab KhaledData Analyst | Business Information Systems GraduateInterested in Data Analysis, Business Intelligence, SQL, Excel, Python, Power BI, and Tableau.📫 Connect with MePortfolio: https://zeinak112.github.io/my_portfolio/LinkedIn: https://www.linkedin.com/in/zeinab-khaled-9a5ab8416/Tableau Public: Executive RFM & Customer Intelligence DashboardEmail: zeinak631@gmail.comData: UCI Online Retail dataset (CC BY 4.0), Chen, D. (2015).
+
+```
+
+---
+
+## 🛠️ Tools
+
+| Tool | Purpose |
+|---|---|
+| **SQL (SQLite)** | CTEs, window functions (`PERCENT_RANK`, `LAG`, `ROW_NUMBER`, running totals), segmentation, Pareto, cohorts |
+| **Python** (pandas, matplotlib) | Cleaning, pipeline orchestration, charts |
+| **Tableau Public** | Interactive dashboard |
+| **GitHub** | Documentation and portfolio |
+
+---
+
+## 👩‍💻 Author
+
+**Zeinab Khaled**  
+Data Analyst | Business Information Systems Graduate  
+Interested in Data Analysis, Business Intelligence, SQL, Excel, Python, Power BI, and Tableau.  
+
+### 📫 Connect with Me
+
+* **Portfolio:** [https://zeinak112.github.io/my_portfolio/](https://zeinak112.github.io/my_portfolio/)[cite: 13]
+* **LinkedIn:** [https://www.linkedin.com/in/zeinab-khaled-9a5ab8416/](https://www.linkedin.com/in/zeinab-khaled-9a5ab8416/)[cite: 13]
+* **Tableau Public:** [Executive RFM & Customer Intelligence Dashboard](https://public.tableau.com/app/profile/zeinab.selim/viz/ExecutiveRFMCustomerIntelligenceDashboard/ExecutiveRFMCustomerIntelligenceDashboard?pu...)[cite: 12, 13]
+* **Email:** zeinak631@gmail.com[cite: 13]
+
+---
+*Data: UCI Online Retail dataset (CC BY 4.0), Chen, D. (2015).*
+
+
+
