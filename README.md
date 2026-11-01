@@ -188,21 +188,27 @@ The charts below come from the same SQL outputs (`python/make_charts.py`).
 2. Install the dependencies:
    ```bash
    pip install -r requirements.txt
-Run the basic cleaning, then the SQL pipeline, then the charts:Bashpython python/00_basic_cleaning.py
-python python/run_pipeline.py
-python python/make_charts.py
-Open tableau/Online_Retail_RFM_Dashboard_updated.twbx in Tableau Public.run_pipeline.py builds a local SQLite database, runs the files in sql/ in order, and writes every table used in Tableau to data/processed/.📁 Repository StructurePlaintextrfm-customer-segmentation/
+   ```
+3. Run the basic cleaning, the SQL pipeline, then the charts:
+   ```bash
+   python python/00_basic_cleaning.py
+   python python/run_pipeline.py
+   python python/make_charts.py
+   ```
+4. Open `tableau/Online_Retail_RFM_Dashboard_updated.twbx` in Tableau Public.
+
+`run_pipeline.py` builds a local SQLite database, runs the files in `sql/` in order, and writes every table used in Tableau to `data/processed/`.
 
 ---
 
 ## 📁 Repository Structure
 
 ```text
+rfm-customer-segmentation/
 │
 ├── data/
-│   ├── raw/                        # Online Retail.xlsx (not included)
+│   ├── raw/                          # Online Retail.xlsx (not included)
 │   └── processed/
-│       ├── clean_online_retail.csv   # zipped if larger than 25 MB
 │       ├── customers_rfm.csv         # one row per customer with scores and segment
 │       ├── segment_summary.csv
 │       ├── revenue_at_risk.csv
@@ -213,14 +219,13 @@ Open tableau/Online_Retail_RFM_Dashboard_updated.twbx in Tableau Public.run_pipe
 │       ├── top_products_by_segment.csv
 │       └── data_quality_log.csv
 │
-├── sql/                            # 01_clean_sales ... 06_sales_products
-├── python/                         # 00_basic_cleaning, run_pipeline, make_charts
-├── tableau/                        # Tableau workbook
-├── images/                         # charts and dashboard screenshot
+├── sql/                              # 01_clean_sales ... 06_sales_products
+├── python/                           # 00_basic_cleaning, run_pipeline, make_charts
+├── tableau/                          # Tableau workbook
+├── images/                           # charts and dashboard screenshot
 ├── requirements.txt
 ├── .gitignore
 └── README.md
-
 ```
 
 ---
@@ -238,19 +243,12 @@ Open tableau/Online_Retail_RFM_Dashboard_updated.twbx in Tableau Public.run_pipe
 
 ## 👩‍💻 Author
 
-**Zeinab Khaled**  
-Data Analyst | Business Information Systems Graduate  
-Interested in Data Analysis, Business Intelligence, SQL, Excel, Python, Power BI, and Tableau.  
+**Zeinab Khaled**
+Data Analyst | Business Information Systems Graduate
 
-### 📫 Connect with Me
+- **Portfolio:** [zeinak112.github.io/my_portfolio](https://zeinak112.github.io/my_portfolio/)
+- **LinkedIn:** [Zeinab Khaled](https://www.linkedin.com/in/zeinab-khaled-9a5ab8416/)
+- **Tableau Public:** [Executive RFM & Customer Intelligence Dashboard](https://public.tableau.com/app/profile/zeinab.selim/viz/ExecutiveRFMCustomerIntelligenceDashboard/ExecutiveRFMCustomerIntelligenceDashboard)
+- **Email:** zeinak631@gmail.com
 
-* **Portfolio:** [https://zeinak112.github.io/my_portfolio/](https://zeinak112.github.io/my_portfolio/)[cite: 13]
-* **LinkedIn:** [https://www.linkedin.com/in/zeinab-khaled-9a5ab8416/](https://www.linkedin.com/in/zeinab-khaled-9a5ab8416/)[cite: 13]
-* **Tableau Public:** [Executive RFM & Customer Intelligence Dashboard](https://public.tableau.com/app/profile/zeinab.selim/viz/ExecutiveRFMCustomerIntelligenceDashboard/ExecutiveRFMCustomerIntelligenceDashboard?pu...)[cite: 12, 13]
-* **Email:** zeinak631@gmail.com[cite: 13]
-
----
 *Data: UCI Online Retail dataset (CC BY 4.0), Chen, D. (2015).*
-
-
-
